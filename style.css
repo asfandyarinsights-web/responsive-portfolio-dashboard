@@ -19,7 +19,6 @@ h2 span{
     color: blue;
 }
 nav{
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,9 +36,17 @@ a{
     font-size: 16px;
     color: aqua;
 }
-.button input{
-    padding: 8px 10px;
+.button input {
+    padding: 8px 15px;
     font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.button input:hover {
+    background-color: #333;
+    color: white;
 }
 main{
     display: grid;
@@ -48,11 +55,97 @@ main{
 .left-sidebar{
     padding: 20px;
     background-color: white;
-    min-height: 400px;
 }
 .left-sidebar ul {
     list-style: none;
 }
 .left-sidebar li{
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+}
+.left-sidebar a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding: 10px;
+    transition: 0.3s;
+    border-radius: 6px;
+}
+.left-sidebar a:hover{
+    color:white;
+    background-color: maroon;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+.card{
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    transition: 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.card h3{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.card p{
+    color: #666;
+    margin-bottom: 15px;
+}
+.card span {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: lightgrey;
+    font-size: 13px;
+    border-radius: 15px;
+}
+.main-content{
+    padding: 20px;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: maroon;
+    color: white;
+}
+
+@media (max-width: 768px){
+    main{
+        /* We're changing from two columns → one column. */
+        grid-template-columns: 1fr;
+    }
+        /* Make the cards one column on small screens */
+     .cards {
+        grid-template-columns: 1fr;
+        }
+
+        nav {
+         flex-direction: column;
+        gap: 15px;
+            
+        
+        }
+        .links ul {
+        flex-direction: column;
+        align-items: center;
+        }
+ 
+        .logo h2 {
+    font-size: 26px;
+}
+.footer {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}   
 }
