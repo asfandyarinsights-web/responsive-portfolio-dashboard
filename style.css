@@ -145,6 +145,29 @@ main{
 .main-content{
     padding: 20px;
 }
+.page-intro {
+    margin-bottom: 25px;
+}
+
+.page-intro span {
+    display: inline-block;
+    color: #10b981;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.page-intro h1 {
+    font-size: 32px;
+    color: #0b1c30;
+    margin-bottom: 8px;
+}
+
+.page-intro p {
+    color: #64748b;
+    font-size: 16px;
+    line-height: 1.5;
+}
 .project-list {
     display:grid;
     grid-template-columns: repeat(3, 1fr);
