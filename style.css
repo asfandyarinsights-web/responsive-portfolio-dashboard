@@ -141,6 +141,27 @@ main{
     background-color: #10b981;
     border-radius: 999px;
 }
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    font-size: 13px;
+    color: #64748b;
+}
+.html-progress {
+    width: 100%;
+}
+.css-progress {
+    width: 70%;
+}
+.js-progress {
+    width: 50%;
+}
+.git-progress {
+    width: 80%;
+}
 .status.completed {
     background-color: #d1fae5;
     color: #047857;
