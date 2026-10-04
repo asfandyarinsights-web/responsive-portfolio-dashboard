@@ -1,71 +1,193 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Responsive Dashboard</title>
-    
-</head>
-<body>
-    <!-- Header -->
-    <header>
-        <!-- Navbar -->
-        <nav>
-            <!-- Logo -->
-            <div class="logo">
-                <h2>Being <span>Developer</span></h2>
-            </div>
-            <!-- Links -->
-            <div class="links">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Project</a></li>
-                    <li><a href="#">Experience</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <!-- Submit Button -->
-            <div class="button">
-                <input type="button" value="submit">
-            </div>
-        </nav>
-    </header>
-    <!-- Hero Section -->
-     <main>
-        <!-- SideBar -->
-        <aside class="left-sidebar">
-                <div class="side-list">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Responsive Dashboard</title>
+        
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <!-- Navbar -->
+            <nav>
+                <!-- Logo -->
+                <div class="logo">
+                    <h2>Being <span>Developer</span></h2>
+                </div>
+                <!-- Links -->
+                <div class="links">
                     <ul>
-                        <li><a href="#">Dashboard</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Skills</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">Project</a></li>
+                        <li><a href="#">Experience</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
-        </aside>
-
-        <!-- Main Content -->
-
-        <section>
-            <div class="main-content">
-                <div class="cards">
-                    <div class="card">HTML</div>
-                    <div class="card">CSS</div>
-                    <div class="card">JS</div>
-                    <div class="card">Git</div>
+                <!-- Submit Button -->
+                <div class="button">
+                    <input type="button" value="submit">
                 </div>
-            </div>
-         </section>
-     </main>
+            </nav>
+        </header>
+        <!-- Hero Section -->
+        <main>
+            <!-- SideBar -->
+            <aside class="left-sidebar">
+                    <div class="side-list">
+                        <h3>Dashboard</h3>
+                        <ul>
+                            <li><a href="#" class="active">Dashboard</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Skills</a></li>
+                            <li><a href="#">About</a></li>
+                        </ul>
+                    </div>
+            </aside>
 
-     <!-- FOOTER -->
-      <footer>
+            <!-- Main Content -->
+            <section>
+                
+                <div class="main-content">
+                    <div class="page-intro">
+                        <span>Overview</span>
+                        <h1>Developer Dashboard</h1>
+                        <p>A personal log and roadmap focused on learning modern web development step by step.</p>
+                    </div>
+                    <div class="cards">
+                        <div class="card">
+                            <!-- title -->
+                            <h3>HTML</h3>
+                            <!-- description -->
+                            <p>Structure and semantics</p>
+                            <!-- small status -->
+                            <span class="status completed">Completed</span>
+
+                                <div class="progress-info">
+                                    <span>Progress</span>
+                                    <span>100%</span>
+                                </div>
+
+                                <div class="progress">
+                                    <div class="progress-bar html-progress"></div>
+                                </div>
+                        </div>
+                        
+                        <div class="card">
+                            <h3>CSS</h3>
+                            <p>Styling and responsive design</p>
+                            <span class="status learning">Learning</span>
+    
+                            <div class="progress-info">
+                                <span>Progress</span>
+                                <span>70%</span>
+                            </div>
+                                <div class="progress">
+                                   <div class="progress-bar css-progress"></div>
+                                </div>
+                        </div>
+
+                        <div class="card">
+                            <h3>JavaScript</h3>
+                            <p>Programming and interactivity</p>
+                            <span class="status learning">Learning</span>
+
+                            <div class="progress-info">
+                                <span>Progress</span>
+                                <span>50%</span>
+                            </div>
+    
+                            <div class="progress">
+                                <div class="progress-bar js-progress"></div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <h3>Git</h3>
+                            <p>Version control and collaboration</p>
+                            <span class="status practicing">Practicing</span>
+
+                            <div class="progress-info">
+                                <span>Progress</span>
+                                <span>80%</span>
+                            </div>
+
+                                <div class="progress">
+                                   <div class="progress-bar git-progress"></div>
+                                </div>
+                        </div>
+                    </div>
+            
+                <!-- project section -->
+                <section>
+                    <div class="projects">
+                        <h2 class="section-title">Recent Projects</h2>
+                            <p class="section-description">
+                                A collection of projects built while learning and practicing web development.
+                            </p>
+                    <div class="project-list">
+                        
+                        <div class="project">
+                            <h3>Responsive Portfolio</h3>
+                            <p>A responsive portfolio dashboard built with HTML and CSS.</p>
+                            
+                            <div class="tech-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                            </div>
+                            <a href="#" class="project-link">Inspect →</a>
+                        </div>
+                    
+                        <div class="project">
+                            <h3>Expense Tracker</h3>
+                            <p>A simple application for tracking daily expenses.</p>
+
+                            <div class="tech-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <a href="#" class="project-link">Inspect →</a>
+                        </div>
+                        
+                        <div class="project">
+                            <h3>SmartCart</h3>
+                            <p>A web project for practicing JavaScript and DOM manipulation.</p>
+                         
+                            <div class="tech-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <a href="#" class="project-link">Inspect →</a>
+                        </div>
+                    </div>
+                </div>
+                </section>
+               
+            </div>
+
+            </section>
+            
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
         <div class="footer">
-            <div class="copy-right"></div>
-            <div class="info"></div>
-            <div class="links"></div>
+            <div class="copy-right">
+                <p>© 2026 Being Developer</p>
+            </div>
+
+            <div class="info">
+                <p>Learning web development step by step.</p>
+            </div>
+
+            <div class="links">
+                <a href="#">GitHub</a>
+                <a href="#">LinkedIn</a>
+            </div>
         </div>
-      </footer>
-</body>
-</html>
+        </footer>
+    </body>
+    </html>
