@@ -41,14 +41,12 @@ nav a.active {
 nav a:hover {
     color: white;
 }
-.links ul{
+.links ul {
     display: flex;
     justify-content: center;
-    align-self: center;
-    gap:15px;
+    gap: 15px;
     list-style: none;
 }
-
 .button input {
     padding: 8px 15px;
     font-size: 16px;
@@ -105,9 +103,8 @@ main{
     display: grid;
     grid-template-columns: repeat(2,minmax(0,1fr));
     gap: 20px;
-}
-.cards {
     margin-bottom: 30px;
+
 }
 .card{
     background-color: white;
@@ -225,8 +222,6 @@ main{
     border: 1px solid #e5e7eb;
     transition: 0.3s;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
-    display: flex;
-    flex-direction: column;
 }
 .project:hover {
     transform: translateY(-4px);
@@ -309,48 +304,51 @@ main{
       color: #10b981;
 }
 
-/* Responsive Media Querry FOr MObile */
-@media (max-width: 768px){
-    main{
-        /* We're changing from two columns → one column. */
+/* ===== Responsive ===== */
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    main {
         grid-template-columns: 1fr;
     }
-        /* Make the cards one column on small screens */
-     .cards {
-        grid-template-columns: 1fr;
-        }
 
-        nav {
-         flex-direction: column;
-        gap: 15px;
-            
-        
-        }
-        .links ul {
-        flex-direction: column;
-        align-items: center;
-         gap: 10px;
-        }
- 
-        .logo h2 {
-    font-size: 26px;
+    .cards {
+        grid-template-columns: 1fr;
     }
-    .footer {
-    flex-direction: column;
-    gap: 15px;
-    text-align: center;
-    }   
+
     .project-list {
         grid-template-columns: 1fr;
     }
- 
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .links ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logo h2 {
+        font-size: 26px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
     .side-list h3 {
         display: none;
     }
+
     .page-intro h1 {
         font-size: 26px;
     }
+
     .main-content {
-    padding: 15px;
+        padding: 15px;
     }
 }
