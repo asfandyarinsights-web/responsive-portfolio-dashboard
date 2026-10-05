@@ -289,6 +289,31 @@ main{
     background-color: #10b981;
     border-color: #10b981;
 }
+.project-search {
+    margin-bottom: 15px;
+}
+
+.project-search input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 14px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    background-color: white;
+    color: #0b1c30;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.project-search input::placeholder {
+    color: #94a3b8;
+}
+
+.project-search input:focus {
+    border-color: #10b981;
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+}
 
 .tech-tags span {
     padding: 4px 8px;
