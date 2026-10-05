@@ -262,6 +262,33 @@ main{
     color: #059669;
     transform: translateX(4px);
 }
+.project-filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    padding: 7px 14px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    background-color: white;
+    color: #475569;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filter-btn:hover {
+    color: #0f172a;
+    border-color: #10b981;
+}
+
+.filter-btn.active {
+    color: white;
+    background-color: #10b981;
+    border-color: #10b981;
+}
 
 .tech-tags span {
     padding: 4px 8px;
@@ -350,5 +377,8 @@ main{
 
     .main-content {
         padding: 15px;
+    }   
+    .project-filters {
+    flex-wrap: wrap;
     }
 }

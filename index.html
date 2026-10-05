@@ -27,7 +27,7 @@
                 </div>
                 <!-- Submit Button -->
                 <div class="button">
-                    <input type="button" value="submit">
+                    <input type="button" value="submit" id="submitbtn">
                 </div>
             </nav>
         </header>
@@ -126,6 +126,12 @@
                             <p class="section-description">
                                 A collection of projects built while learning and practicing web development.
                             </p>
+                            <div class="project-filters">
+                                <button class="filter-btn active" data-filter="all">All</button>
+                                <button class="filter-btn" data-filter="HTML">HTML</button>
+                                <button class="filter-btn" data-filter="CSS">CSS</button>
+                                <button class="filter-btn" data-filter="JavaScript">JavaScript</button>
+                            </div>
                     <div class="project-list">
                         
                         <div class="project">
@@ -189,5 +195,6 @@
             </div>
         </div>
         </footer>
+        <script src="script.js"></script>
     </body>
-    </html>
+</html>
