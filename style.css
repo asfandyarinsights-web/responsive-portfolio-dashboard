@@ -355,6 +355,68 @@ main{
 .footer .links a:hover {
       color: #10b981;
 }
+.project-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(15, 23, 42, 0.6);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.modal-content {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.2);
+}
+
+.modal-close {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    border: none;
+    background: none;
+    color: #64748b;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.modal-close:hover {
+    color: #0f172a;
+}
+
+.modal-content h2 {
+    margin-bottom: 12px;
+    color: #0b1c30;
+    font-size: 24px;
+}
+
+.modal-content p {
+    color: #64748b;
+    line-height: 1.5;
+    margin-bottom: 18px;
+}
+
+.modal-technologies {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.modal-technologies span {
+    padding: 5px 9px;
+    background-color: #f1f5f9;
+    color: #475569;
+    font-size: 12px;
+    border-radius: 5px;
+}
 
 /* ===== Responsive ===== */
 /* ===== Responsive ===== */
